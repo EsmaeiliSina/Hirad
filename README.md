@@ -1,3 +1,3 @@
-# hirad
+# Hirad
 
-A new Flutter project.
+A simple game for my nephew
