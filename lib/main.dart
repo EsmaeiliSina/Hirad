@@ -5,11 +5,16 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: SafeArea(
-          child: Text("Hirad"),
+    return Directionality(
+      textDirection: TextDirection.rtl,
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: Scaffold(
+          appBar: AppBar(
+            title: Text(
+              "هیراد",
+            ),
+          ),
         ),
       ),
     );
