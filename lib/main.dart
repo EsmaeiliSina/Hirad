@@ -1,5 +1,5 @@
+import 'package:audioplayers/audio_cache.dart';
 import 'package:flutter/material.dart';
-import 'package:audioplayers/audioplayers.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,6 +11,21 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
+          body: Column(
+            children: [
+              FlatButton(
+                onPressed: () {
+                  final player = AudioCache();
+                  player.play('note1.wav');
+                },
+                child: Container(
+                  height: 20,
+                  width: double.infinity,
+                  color: Colors.red,
+                ),
+              )
+            ],
+          ),
           appBar: AppBar(
             title: Text(
               "بلز هیراد",
