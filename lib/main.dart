@@ -23,27 +23,24 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Directionality(
-      textDirection: TextDirection.rtl,
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: Scaffold(
-          backgroundColor: Colors.black,
-          body: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              keyboard("1", 1, Colors.red),
-              keyboard("2", 2, Colors.orange),
-              keyboard("3", 3, Colors.yellow),
-              keyboard("4", 4, Colors.green),
-              keyboard("5", 5, Colors.teal),
-              keyboard("6", 6, Colors.blue),
-              keyboard("7", 7, Colors.purple),
-            ],
-          ),
-          appBar: AppBar(
-            title: Text("Hirad"),
-          ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        backgroundColor: Colors.black,
+        body: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            keyboard("1", 1, Colors.red),
+            keyboard("2", 2, Colors.orange),
+            keyboard("3", 3, Colors.yellow),
+            keyboard("4", 4, Colors.green),
+            keyboard("5", 5, Colors.teal),
+            keyboard("6", 6, Colors.blue),
+            keyboard("7", 7, Colors.purple),
+          ],
+        ),
+        appBar: AppBar(
+          title: Text("Hirad"),
         ),
       ),
     );
