@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
         home: Scaffold(
           backgroundColor: Colors.black,
           body: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Expanded(
                 child: FlatButton(
