@@ -42,9 +42,7 @@ class MyApp extends StatelessWidget {
             ],
           ),
           appBar: AppBar(
-            title: Text(
-              "بلز هیراد",
-            ),
+            title: Text("Hirad"),
           ),
         ),
       ),
