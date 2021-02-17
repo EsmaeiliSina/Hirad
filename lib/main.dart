@@ -9,6 +9,18 @@ class MyApp extends StatelessWidget {
     player.play('note$number.wav');
   }
 
+  Expanded keyboard(String name, int number, color) {
+    return Expanded(
+      child: FlatButton(
+        child: Text(name),
+        color: color,
+        onPressed: () {
+          play(number);
+        },
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Directionality(
@@ -20,69 +32,13 @@ class MyApp extends StatelessWidget {
           body: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Expanded(
-                child: FlatButton(
-                  child: Text("1"),
-                  color: Colors.red,
-                  onPressed: () {
-                    play(1);
-                  },
-                ),
-              ),
-              Expanded(
-                child: FlatButton(
-                  child: Text("2"),
-                  color: Colors.orange,
-                  onPressed: () {
-                    play(2);
-                  },
-                ),
-              ),
-              Expanded(
-                child: FlatButton(
-                  child: Text("3"),
-                  color: Colors.yellow,
-                  onPressed: () {
-                    play(3);
-                  },
-                ),
-              ),
-              Expanded(
-                child: FlatButton(
-                  child: Text("4"),
-                  color: Colors.green,
-                  onPressed: () {
-                    play(4);
-                  },
-                ),
-              ),
-              Expanded(
-                child: FlatButton(
-                  child: Text("5"),
-                  color: Colors.green[900],
-                  onPressed: () {
-                    play(5);
-                  },
-                ),
-              ),
-              Expanded(
-                child: FlatButton(
-                  child: Text("6"),
-                  color: Colors.blue,
-                  onPressed: () {
-                    play(6);
-                  },
-                ),
-              ),
-              Expanded(
-                child: FlatButton(
-                  child: Text("7"),
-                  color: Colors.purple,
-                  onPressed: () {
-                    play(7);
-                  },
-                ),
-              )
+              keyboard("1", 1, Colors.red),
+              keyboard("2", 2, Colors.orange),
+              keyboard("3", 3, Colors.yellow),
+              keyboard("4", 4, Colors.green),
+              keyboard("5", 5, Colors.teal),
+              keyboard("6", 6, Colors.blue),
+              keyboard("7", 7, Colors.purple),
             ],
           ),
           appBar: AppBar(
