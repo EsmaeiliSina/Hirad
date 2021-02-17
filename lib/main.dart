@@ -33,30 +33,35 @@ class MyApp extends StatelessWidget {
                 },
               ),
               FlatButton(
+                child: Text("3"),
                 color: Colors.yellow,
                 onPressed: () {
                   play(3);
                 },
               ),
               FlatButton(
+                child: Text("4"),
                 color: Colors.green,
                 onPressed: () {
                   play(4);
                 },
               ),
               FlatButton(
+                child: Text("5"),
                 color: Colors.green[900],
                 onPressed: () {
                   play(5);
                 },
               ),
               FlatButton(
+                child: Text("6"),
                 color: Colors.blue,
                 onPressed: () {
                   play(6);
                 },
               ),
               FlatButton(
+                child: Text("7"),
                 color: Colors.purple,
                 onPressed: () {
                   play(7);
