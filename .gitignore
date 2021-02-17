@@ -15,6 +15,7 @@
 *.ipr
 *.iws
 .idea/
+.flutter-plugins-dependencies
 
 # Visual Studio Code related
 .vscode/
@@ -27,7 +28,7 @@
 .pub-cache/
 .pub/
 build/
-.flutter-plugins-dependencies
+
 
 # Android related
 **/android/**/gradle-wrapper.jar
@@ -40,3 +41,4 @@ build/
 
 # iOS/XCode related
 **/ios/
+.flutter-plugins-dependencies
