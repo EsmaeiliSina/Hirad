@@ -16,56 +16,71 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
+          backgroundColor: Colors.black,
           body: Column(
             children: [
-              FlatButton(
-                child: Text("1"),
-                color: Colors.red,
-                onPressed: () {
-                  play(1);
-                },
+              Expanded(
+                child: FlatButton(
+                  child: Text("1"),
+                  color: Colors.red,
+                  onPressed: () {
+                    play(1);
+                  },
+                ),
               ),
-              FlatButton(
-                child: Text("2"),
-                color: Colors.orange,
-                onPressed: () {
-                  play(2);
-                },
+              Expanded(
+                child: FlatButton(
+                  child: Text("2"),
+                  color: Colors.orange,
+                  onPressed: () {
+                    play(2);
+                  },
+                ),
               ),
-              FlatButton(
-                child: Text("3"),
-                color: Colors.yellow,
-                onPressed: () {
-                  play(3);
-                },
+              Expanded(
+                child: FlatButton(
+                  child: Text("3"),
+                  color: Colors.yellow,
+                  onPressed: () {
+                    play(3);
+                  },
+                ),
               ),
-              FlatButton(
-                child: Text("4"),
-                color: Colors.green,
-                onPressed: () {
-                  play(4);
-                },
+              Expanded(
+                child: FlatButton(
+                  child: Text("4"),
+                  color: Colors.green,
+                  onPressed: () {
+                    play(4);
+                  },
+                ),
               ),
-              FlatButton(
-                child: Text("5"),
-                color: Colors.green[900],
-                onPressed: () {
-                  play(5);
-                },
+              Expanded(
+                child: FlatButton(
+                  child: Text("5"),
+                  color: Colors.green[900],
+                  onPressed: () {
+                    play(5);
+                  },
+                ),
               ),
-              FlatButton(
-                child: Text("6"),
-                color: Colors.blue,
-                onPressed: () {
-                  play(6);
-                },
+              Expanded(
+                child: FlatButton(
+                  child: Text("6"),
+                  color: Colors.blue,
+                  onPressed: () {
+                    play(6);
+                  },
+                ),
               ),
-              FlatButton(
-                child: Text("7"),
-                color: Colors.purple,
-                onPressed: () {
-                  play(7);
-                },
+              Expanded(
+                child: FlatButton(
+                  child: Text("7"),
+                  color: Colors.purple,
+                  onPressed: () {
+                    play(7);
+                  },
+                ),
               )
             ],
           ),
